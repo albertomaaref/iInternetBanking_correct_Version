@@ -59,6 +59,7 @@ public class ContactFragment extends Fragment implements View.OnClickListener {
     }
 
     private void GoToFragment(Fragment fragment) {
+        //R.id.fragment_login_container c'est le container
         getFragmentManager().beginTransaction().replace(R.id.fragment_login_container,fragment).commit();
     }
 }
