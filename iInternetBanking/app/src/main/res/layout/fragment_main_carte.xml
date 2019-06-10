@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_backgroud"
+        android:orientation="vertical"
+        tools:context=".Fragments.MainCarteFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:weightSum="100">
+
+            <ImageButton
+                android:id="@+id/retour"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="10"
+                android:background="@drawable/fff"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:src="@drawable/logo"
+                android:layout_weight="90"
+                android:layout_gravity="fill_horizontal" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Mes Cartes"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:textSize="25sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="100dp" />
+
+        <Button
+            android:id="@+id/listcarte"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded2"
+            android:layout_gravity="center"
+            android:text="Liste Des Cartes"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <Button
+            android:id="@+id/demandecarte"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded2"
+            android:layout_gravity="center"
+            android:text="Demander Carte"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <Button
+            android:id="@+id/opposcarte"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded2"
+            android:layout_gravity="center"
+            android:text="Mise En Opposition Carte"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</layout>

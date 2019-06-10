@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_backgroud"
+        android:orientation="vertical"
+        tools:context=".Fragments.OppositionChequierFragment">
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/logo" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Mise En Opposition Chèquier"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="70dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="Entrez le numéro du chèque :"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded2">
+
+            <EditText
+                android:id="@+id/numero_chequier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:inputType="numberDecimal"
+                android:background="@android:color/transparent"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="Montrez le raison d'opposition :"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="center">
+
+            <RadioGroup
+                android:id="@+id/group_opposition_chequier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/perte_oppo"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Perte"
+                    android:textColor="#635252 "
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/vol_oppo"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Vol"
+                    android:textColor="#635252"
+                    android:textSize="20sp" />
+
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <RelativeLayout
+            android:id="@+id/oppo_chequier_container"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded">
+
+            <TextView
+                android:id="@+id/oppo_chequier_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Effectuer"
+                android:textColor="#FFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avi_opposition_chequier"
+                style="@style/AVLoadingIndicatorView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                app:indicatorColor="@android:color/white"
+                app:indicatorName="BallPulseIndicator" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

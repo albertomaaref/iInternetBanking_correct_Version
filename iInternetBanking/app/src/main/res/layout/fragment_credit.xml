@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Fragments.CreditFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_backgroud"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="500dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="300sp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Montant :"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center">
+
+                <EditText
+                    android:id="@+id/capital_credit_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:background="@drawable/rounded2"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:id="@+id/duration_txt"
+                android:layout_width="300sp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Duree (Mois) ="
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center">
+
+                <SeekBar
+                    android:id="@+id/seekBar_credit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:max="360"
+                    android:progress="180"
+                    style="@style/AppThemeTwo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:layout_width="300sp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Type de crédit :"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center">
+
+                <Spinner
+                    android:id="@+id/spin_credit"
+                    android:layout_width="320dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:background="@drawable/rounded2"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+
+            <TextView
+                android:id="@+id/mensualite_txt"
+                android:layout_width="300sp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Mensualité du crédit"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <RelativeLayout
+                android:id="@+id/similateur_credit_container"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/similateur_credit_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:text="Simuler"
+                    android:textAlignment="center"
+                    android:textColor="#FFFF"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/avi_credit"
+                    style="@style/AVLoadingIndicatorView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible"
+                    app:indicatorColor="@android:color/white"
+                    app:indicatorName="BallPulseIndicator" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+</layout>

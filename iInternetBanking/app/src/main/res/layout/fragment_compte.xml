@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_backgroud"
+        android:orientation="vertical"
+        tools:context=".Fragments.CompteFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <ImageButton
+                android:id="@+id/retour"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:background="@drawable/fff" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="90"
+                android:src="@drawable/logo" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Mes Comptes"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <Spinner
+            android:id="@+id/spin_compte"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"></Spinner>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:id="@+id/compte_details_container"
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/num" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="5dp" />
+
+                <TextView
+                    android:id="@+id/num_txt"
+                    android:layout_width="290dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded2"
+                    android:gravity="center"
+                    android:text="Numéro Compte"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/nnnn" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="5dp" />
+
+                <TextView
+                    android:id="@+id/nom_txt"
+                    android:layout_width="290dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded2"
+                    android:gravity="center"
+                    android:text="Nom Compte"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/epa" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="5dp" />
+
+                <TextView
+                    android:id="@+id/solde_txt"
+                    android:layout_width="290dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded2"
+                    android:gravity="center"
+                    android:text="Solde"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/dev" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="5dp" />
+
+                <TextView
+                    android:id="@+id/solde_devises_txt"
+                    android:layout_width="290dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded2"
+                    android:gravity="center"
+                    android:text="Devises Compte"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

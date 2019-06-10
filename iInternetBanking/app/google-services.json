@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "786268645071",
+    "firebase_url": "https://iinternetbanking.firebaseio.com",
+    "project_id": "iinternetbanking",
+    "storage_bucket": "iinternetbanking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786268645071:android:94a724f56f5f183a",
+        "android_client_info": {
+          "package_name": "com.example.iinternetbanking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "786268645071-u57at9hesntl06g1dr973pr8ftbteaue.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.iinternetbanking",
+            "certificate_hash": "6f41a6f6dd9cc463bf3fff74e35419414b048ce7"
+          }
+        },
+        {
+          "client_id": "786268645071-ka171fpq36ml4301l7uu8f4jrdo25evo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClBFOtUEiPTBygu9r1C5NAErkwQghHeVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "786268645071-ka171fpq36ml4301l7uu8f4jrdo25evo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

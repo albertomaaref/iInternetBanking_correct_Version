@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".Fragments.MainFragment"
+        android:background="@drawable/main_backgroud">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accueil"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/card"/>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+                    <Button
+                        android:id="@+id/compte"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/rounded"
+                        android:text="Mes comptes"
+                        android:textSize="10dp"
+                        android:textColor="#FFFF"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/vir"/>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+                    <Button
+                        android:id="@+id/virement"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/rounded"
+                        android:text="Virement"
+                        android:textColor="#FFFF"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/carte"/>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+                    <Button
+                        android:id="@+id/carte"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/rounded"
+                        android:text="Mes cartes"
+                        android:textColor="#FFFF"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/cheque" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+                    <Button
+                        android:id="@+id/cheque"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/rounded"
+                        android:text="Mes Chéquiers"
+                        android:textSize="10dp"
+                        android:textColor="#FFFF"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/histo"/>
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+                    <Button
+                        android:id="@+id/historique"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/rounded"
+                        android:text="Historique d'opérations"
+                        android:textSize="10dp"
+                        android:textColor="#FFFF"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="125dp"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center">
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="125dp"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_logout"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+                <Button
+                    android:id="@+id/deconexion"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rounded"
+                    android:text="Deconnexion"
+                    android:textSize="10dp"
+                    android:textColor="#FFFF"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
